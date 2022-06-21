@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Terms and conditions</title>
+        <link href="styles.css" type="text/css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" 
+        rel="stylesheet">
+    
+        <script>
+            let myName = "pet's book";
+            let myAge =21;
+            const mySize = '600';
+            const myColours = ["red", "blue",255255255];
+
+            for(i = 0; i < myColours.lenght; i++) {
+                console.log(myColours[i]);
+            }
+
+            for (s of myColours) {
+                console.log(s);
+            }
+
+            console.log(myName, myAge);
+        
+            if(myName === "pet's book") {
+                console.log("Thye match");
+            }
+            else {
+                console.log("They don't");
+            }
+
+            letyourAge = "21";
+            console.log(myAge === +yourAge);
+
+            let myAddress;
+            console.log(myAdress !=null);
+
+            let x = 6;
+            lety = 15;
+            x = x + y;
+            y = y / 4;
+
+            let z = x++;
+            console.log(x,z);
+            if (x === 6 || y < 15) {
+
+            }
+
+           const sentence = `My name is ${myName}`;
+           const sentence2 = "My name is " + myName;
+           console.log(sentance);
+
+           const customer = {name : "Pet", 
+                                age: 21,
+                                children: ["Simon", "Denise"],
+                                preferences: {favouriteColour: "Blue"}
+                            }; 
+
+            customer.age = 22;
+            console.log(customer);
+
+            const customer2 = {...customer, age:33, surname:"Thornfiled"};
+            console.log(customer2);
+
+            function printHello() {
+                console.log('Im printing hello');
+            }
+            
+            const printHello2 = () => {
+                console.log('Im printing hello');
+            }
+
+
+        </script>
+
+    </head>
+
+    <body>
+        <h1>Terms and conditions</h1>
+        <p>These are the ts and cs</p>
+
+        <button onclick="printHello();">click me</button>
+        <button onclick="printHello2();">click me</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Memebership type</th>
+                    <th>price</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr><td>full memebership</td><td>&euro; 3000</td></tr>
+                <tr><td>off peak memebership</td><td>&euro; 3000</td></tr>
+                <tr><td>all gyms memebership</td><td>&euro; 3000</td></tr>
+                <tr><td colspan="2"> Please contact us for more information</td></tr>
+            </tbody>
+        </table>
+    </body>
+</html>

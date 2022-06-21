@@ -30,25 +30,41 @@
 
                 <label for="dob">Date of birth</label>
                 <input type="date" id="dob" name="dob">
-                
-                <label>Memebership level *</label>
+
+                <label>Membership level *</label>
 
                 <div class="radio-container">
+
+                <input type="radio" id="full" value="full" name="membership">
+                <label class="radio-label" for="full" >Full access</label>
                 
-                <input class="radio-label" type="radio" id="full" value="full">
-                <label>Full access</label>
-
-                <input class="radio-label" type="radio" id="op" value="op">
-                <label>Off peak</label>
-
-                <input class="radio-label" type="radio" id="allg" value="allg">
-                <label>All gyms</label>
+                <input type="radio" id="op" value="op" name="membership">
+                <label class="radio-label" for="op">Off peak</label>
+                
+                <input type="radio" id="allg" value="allg" name="membership"> 
+                <label class="radio-label" for="allg">All gyms</label>
                 </div>
 
-                <button type="submit">Submit</button>
-            </form>
+                <label for="acceptedTandC">I accept the
+                    <a href=="tnc.html" tarhget="_blank">Terms and conditions</a>
+                </label>
+                
+                <input type="checkbox" name="acceptedTandC" value="yes" id="acceptedTandC">
 
-            <!-- <label>ANother label</label> -->
+                <script>
+                    const onSubmit = () => {
+                        <!-- event.preventDefault(); -->
+                        let firstNameInput = dpcumdent.getElementById("firstName");
+                        console.log(firstNameInput.value);
+                        firstNameInput.value = "Simon";
+                    };
+                </script> 
+
+                <button onclick="onSubmit();" type="button">Submit</button>
+
+                <!-- <button type="submit">Submit</button> -->
+                
+            </form>
         </div>
     </body>
 

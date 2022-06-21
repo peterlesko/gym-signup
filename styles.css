@@ -1,4 +1,4 @@
-/* body {
+body {
     background: #ccc;
     font-family: 'Poppins', sans-serif;
 }
@@ -16,7 +16,7 @@
 form label {
     color: #00f;
     width: 300px;
-    display:block;
+    display: block;
     float: left;
     margin-right: 10px;
 }
@@ -28,48 +28,15 @@ form label.radio-label {
 }
 
 input[type="radio"] {
-    display:inline-block;
+    display: inline-block;
 } 
 
 input, select {
     margin-bottom: 10px;
     display: block;
-} */
+} 
 
-
-body {
-    background: #ccc;
-    font-family: 'Poppins', sans-serif;
-}
-
-.container {
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    background: #fff;
-    border: 1px #000 solid;
-    padding: 20px;
-}
-
-form label {
-    color: #00f;
-    width: 300px;
-    display: block;
-    float: left;
-    margin-right: 10px;
-}
-
-form label.radio-label {
-    display: inline-block;
-    float: none;
-    width: fit-content;
-}
-
-input[type="radio"] {
-    display: inline-block;
-}
-
-input, select {
-    margin-bottom: 10px;
-    display: block;
+table, td {
+    border: 1px solid #000;
+    border-collapse: collapse;
 }
